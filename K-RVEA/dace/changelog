@@ -1,0 +1,125 @@
+
+ c :  comment
+ * :  bug fixed
+ + :  new feature/function
+ x :  changed functionality
+
+--------------------------------------------------------------------
+Version 2.5, September 4, 2002
+
+ *  REGPOLY2  did not work properly for dimension greater than 2
+    Bug fixed.
+
+--------------------------------------------------------------------
+Version 2.4, September 3, 2002
+
+ x  DACEFIT  gives an error return in case of a rank deficient matrix F.  
+    May arise with a poor combination of choice of regression model 
+    and distribution of design sites.
+
+--------------------------------------------------------------------
+Version 2.3, August 30, 2002
+
+ x  DACEFIT  gives an error return in case of zero columns in matrix F.  
+    May arise with a poor combination of choice of regression model 
+    and distribution of design sites.
+
+--------------------------------------------------------------------
+Version 2.2, August 27, 2002
+
+ x  DACEFIT  allows design data with standard deviation zero 
+    in one or more directions.
+
+--------------------------------------------------------------------
+Version 2.1, August 26, 2002
+
+ *  PREDICTOR  returned erroneous mse-values in case of single 
+    response, multiple entry.  This bug is fixed.
+
+--------------------------------------------------------------------
+Version 2.0, August 5, 2002
+
+ x  The element  dmodel.regress  is renamed to  dmodel.regr
+    in  DACEFIT, lines 19, 106
+    in  PREDICTOR, lines 58, 90, 107
+    
+ c  Documentation is adapted to the new version. A separate report
+    documenting the algorithm and other special parts of the toolbox
+    is available.
+
+--------------------------------------------------------------------
+Version 1.3, July 3, 2002
+
+ *  A developer debug statement in PREDICTOR line 52:
+
+      save NX x
+
+    is removed.
+
+ +  DSMERGE is a new function for merging data sets with multiple
+    design sites (i.e., sites sampled more than one time).
+    See 'help dsmerge' for more information.
+
+ +  PREDICTOR now return Jacobian matrices for model and mean
+    squared error also for cases with multiple response functions.
+
+ c  We would like to acknowledge the comments and suggestions from
+    Thierry Dalon, from Siemens VDO Automotive AG, which is a great
+    help in improving this software.
+
+--------------------------------------------------------------------
+Version 1.2, June 25, 2002
+
+ +  DACEFIT now has a second output parameter
+
+        [dmodel, perf] = dacefit(S, Y, regr, corr, theta0)
+
+    or        
+
+        [dmodel, perf] = dacefit(S, Y, regr, corr, theta0, lob, upb)
+        
+    The second output parameter gives the convergence history of the
+    optimization - see 'help dacefit' for more information.
+
+ +  DACEFIT now allows the second input argument to be an m*q matrix,
+    i.e., allows q response functions to be modelled, the elements of
+    dmodel: beta, gamma, sigma2, Ysc are changed accordingly.
+    
+ c  The optimization method in DACEFIT is changed. A separate report
+    documenting the algorithm and other special parts of the toolbox
+    will be available in August 2002.
+    
+ +  PREDICTOR is adapted to the changes in DACEFIT, though in case
+    of multiple response functions it does not yet return the
+    Jacobian matrices for the predicted models and their respective
+    mean squared errors.
+    
+ +  CORRCUBIC is the new name of the function named CORRSPLINE
+    in version 1.1. See 'help corrcubic' for more information.
+    
+ x  CORRSPLINE gives a correlation function based on a cubic
+    spline. See 'help corrspline' for more information.
+    The above mentioned report will also discuss this new 
+    correlation model.
+    
+ x  The  parameter vector q in GRIDSAMP is changed so that now it 
+    is the number of equidistant points in each coordinate direction.
+    This is in accordance with the similar parameter in LHSAMP
+    and LINSPACE.
+
+--------------------------------------------------------------------
+Version 1.1, June 7, 2002
+	
+ *  A sign error in the gradient calculation in CORRGAUSS is
+    corrected: line 33 in the file is changed from
+   
+      dr = repmat(-2*theta(:).',m,1) .* d .* repmat(r,1,n);
+
+    to
+
+      dr = -2*repmat(-theta(:).',m,1) .* d .* repmat(r,1,n);
+
+--------------------------------------------------------------------
+Version 1.0, April 16, 2002
+
+ c  First version released
