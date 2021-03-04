@@ -12,3 +12,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |K-RVEA|A surrogate-assisted reference vector guided evolutionary algorithm for computationally expensive many-objective optimization|[tichugh/K-RVEA](https://github.com/tichugh/K-RVEA)|
 |HK-RVEA|Surrogate-assisted evolutionary biobjective optimization for objectives with non-uniform latencies|[tichugh/HK-RVEA](https://github.com/tichugh/HK-RVEA)|
 |TSA-BFEA|Transfer stacking from low-to high-fidelity: A surrogate-assisted bi-fidelity evolutionary algorithm|[HandingWang/TSA-BFEA](https://github.com/HandingWang/TSA-BFEA)|
+|CSEA|A Classification-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Many-Objective Optimization|[Cheng He/CSEA](https://www.researchgate.net/publication/324721301_The_source_code_of_CSEA)|
