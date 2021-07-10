@@ -66,7 +66,7 @@ class GA():
                 alfa2 = np.where(np.isnan(alfa2), 1, alfa2)
                 randList = np.random.random(self.chrom_length)
                 orTF = (randList <= 1 / alfa1)
-                aq = np.array([0] * self.chrom_length)
+                aq = np.array([0.0] * self.chrom_length)
                 for j in range(self.chrom_length):
                     if orTF[j] == True:
                         aq[j] = (randList[j] * alfa1[j]) ** (1.0 / (self.nc + 1))
@@ -76,7 +76,7 @@ class GA():
 
                 randList = np.random.random(self.chrom_length)
                 orTF = (randList <= 1 / alfa2)
-                bq = np.array([0] * self.chrom_length)
+                bq = np.array([0.0] * self.chrom_length)
                 for j in range(self.chrom_length):
                     if orTF[j] == True:
                         bq[j] = (randList[j] * alfa2[j]) ** (1.0 / (self.nc + 1))
