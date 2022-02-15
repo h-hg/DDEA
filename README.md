@@ -14,3 +14,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |TSA-BFEA|Transfer stacking from low-to high-fidelity: A surrogate-assisted bi-fidelity evolutionary algorithm|[HandingWang/TSA-BFEA](https://github.com/HandingWang/TSA-BFEA)|
 |CSEA|A Classification-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Many-Objective Optimization|[Cheng He/CSEA](https://www.researchgate.net/publication/324721301_The_source_code_of_CSEA)|
 |TLSAPSO|A two-layer surrogate-assisted particle swarm optimization algorithm|[IIS-tyust/TLSAPSO](https://github.com/IIS-tyust/TLSAPSO)|
+|SHPSO|Surrogate-assisted hierarchical particle swarm optimization|[yuhaibo2017/SHPSO_code](https://github.com/yuhaibo2017/SHPSO_code)|
