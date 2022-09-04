@@ -19,8 +19,9 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |SAEAPRG|A Surrogate-Assisted Evolutionary Feature Selection Algorithm for High-Dimensional Classification|[HandingWangXDGroup/SAEAPRG](https://github.com/HandingWangXDGroup/SAEAPRG)|
 |SDH-Jaya|A surrogate-assisted Jaya algorithm based on optimal directional guidance and historical learning mechanism|[zzzhhh-320/SDHJAYA](https://github.com/zzzhhh-320/SDHJAYA)|
 |IKAEA|A Fast Kriging-Assisted Evolutionary Algorithm Based on Incremental Learning|[zhandawei/Incremental_Kriging_Assisted_Evolutionary_Algorithm](https://github.com/zhandawei/Incremental_Kriging_Assisted_Evolutionary_Algorithm)|
-|KTA2||[HandingWangXDGroup/KTA2](https://github.com/HandingWangXDGroup/KTA2)|
+|KTA2|A Kriging-Assisted Two-Archive Evolutionary Algorithm for Expensive Many-Objective Optimization|[HandingWangXDGroup/KTA2](https://github.com/HandingWangXDGroup/KTA2)|
 |EAHVFA|A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming|[HandingWangXDGroup/EAHVFA](https://github.com/HandingWangXDGroup/EAHVFA)|
 |IBEA-MS|Performance Indicator based Adaptive Model Selection for Offline Data-Driven Multi-Objective Evolutionary Optimization|[HandingWangXDGroup/IBEA-MS](https://github.com/HandingWangXDGroup/IBEA-MS)|
 |MS-MOEA|An Adaptive Model Switch-based Surrogate-Assisted Evolutionary Algorithm for Noisy Expensive Multi-Objective Optimization|[HandingWangXDGroup/MS-MOEA](https://github.com/HandingWangXDGroup/MS-MOEA)|
 |PBF|A Framework for Expensive Many-Objective Optimization with Pareto-based Bi-indicator Infill Sampling Criterion|[HandingWangXDGroup/PBF](https://github.com/HandingWangXDGroup/PBF)|
+|MDR-SARA|Multi-Stage Dimension Reduction for Expensive Sparse Multi-Objective Optimization Problems|[HandingWangXDGroup/MDR-SAEA](https://github.com/HandingWangXDGroup/MDR-SAEA)|
