@@ -18,3 +18,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |SAMSO|A Surrogate-Assisted Multi-Swarm Optimization Algorithm for High-Dimensional Computationally Expensive Problems|[fanli525/SAMSO](https://github.com/fanli525/SAMSO)|
 |SAEAPRG|A Surrogate-Assisted Evolutionary Feature Selection Algorithm for High-Dimensional Classification|[HandingWangXDGroup/SAEAPRG](https://github.com/HandingWangXDGroup/SAEAPRG)|
 |SDH-Jaya|A surrogate-assisted Jaya algorithm based on optimal directional guidance and historical learning mechanism|[zzzhhh-320/SDHJAYA](https://github.com/zzzhhh-320/SDHJAYA)|
+|IKAEA|A Fast Kriging-Assisted Evolutionary Algorithm Based on Incremental Learning|[zhandawei/Incremental_Kriging_Assisted_Evolutionary_Algorithm](https://github.com/zhandawei/Incremental_Kriging_Assisted_Evolutionary_Algorithm)|
