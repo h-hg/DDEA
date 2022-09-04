@@ -16,3 +16,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |TLSAPSO|A two-layer surrogate-assisted particle swarm optimization algorithm|[IIS-tyust/TLSAPSO](https://github.com/IIS-tyust/TLSAPSO)|
 |SHPSO|Surrogate-assisted hierarchical particle swarm optimization|[yuhaibo2017/SHPSO_code](https://github.com/yuhaibo2017/SHPSO_code)|
 |SAMSO|A Surrogate-Assisted Multi-Swarm Optimization Algorithm for High-Dimensional Computationally Expensive Problems|[fanli525/SAMSO](https://github.com/fanli525/SAMSO)|
+|SAEAPRG|A Surrogate-Assisted Evolutionary Feature Selection Algorithm for High-Dimensional Classification|[HandingWangXDGroup/SAEAPRG](https://github.com/HandingWangXDGroup/SAEAPRG)|
