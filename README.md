@@ -23,3 +23,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |EAHVFA|A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming|[HandingWangXDGroup/EAHVFA](https://github.com/HandingWangXDGroup/EAHVFA)|
 |IBEA-MS|Performance Indicator based Adaptive Model Selection for Offline Data-Driven Multi-Objective Evolutionary Optimization|[HandingWangXDGroup/IBEA-MS](https://github.com/HandingWangXDGroup/IBEA-MS)|
 |MS-MOEA|An Adaptive Model Switch-based Surrogate-Assisted Evolutionary Algorithm for Noisy Expensive Multi-Objective Optimization|[HandingWangXDGroup/MS-MOEA](https://github.com/HandingWangXDGroup/MS-MOEA)|
+|PBF|A Framework for Expensive Many-Objective Optimization with Pareto-based Bi-indicator Infill Sampling Criterion|[HandingWangXDGroup/PBF](https://github.com/HandingWangXDGroup/PBF)|
