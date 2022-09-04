@@ -1,0 +1,28 @@
+%%%*********************************************************************************************************%%%
+%% Implementation of A Generation-based Optimal Restart Strategy for Surrogate-assisted SLPSO (GORS-SSLPSO)
+%% H. Yu, Y. Tan, C. Sun, J. Zeng, A generation-based optimal restart strategy for surrogate-assisted 
+%% social learning particle swarm optimization, Knowledge-Based Systems, (2018).
+%%%*********************************************************************************************%%%
+%% This paper and this code should be referenced whenever they are used to 
+%% generate results for the user's own research. 
+%%%*********************************************************************************************%%%
+%% This matlab code was written by Haibo Yu
+%% Please refer with all questions, comments, bug reports, etc. to tyustyuhaibo@126.com 
+% % 
+%% test functions' variable domain
+% 变量上下限
+% Xmin=-32.768;Xmax=32.768;%---Ackley 
+% Xmin=-600;Xmax=600;%---Griewank
+Xmin=-5.12;Xmax=5.12;%---Rastrigins 
+% Xmin=-2.048;Xmax=2.048;%---Rosenbrock
+% Xmin=-5.12;Xmax=5.12;%---Ellipsoid 
+%----------------------------------------------------
+%% ************ 2005 CEC Benchmark Function ***********
+% Xmin=-100;Xmax=100; % cec05func / 1-6 / 12 / 14 / 
+% Xmin=0;Xmax=600; % cec05func 7
+% Xmin=-32;Xmax=32; % cec05func 8
+% Xmin=-5;Xmax=5;       % cec05func / 9-10 / 15-24 /
+% Xmin=-0.5;Xmax=0.5;	% cec05func 11
+% Xmin=-3;Xmax=1;	% cec05func 13
+% Xmin=-2;Xmax=5;	% cec05func 25
+%------------------------------------------------------

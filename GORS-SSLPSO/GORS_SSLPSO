@@ -1,0 +1,200 @@
+%%%*********************************************************************************************************%%%
+%% Implementation of A Generation-based Optimal Restart Strategy for Surrogate-assisted SLPSO (GORS-SSLPSO)
+%% H. Yu, Y. Tan, C. Sun, J. Zeng, A generation-based optimal restart strategy for surrogate-assisted 
+%% social learning particle swarm optimization, Knowledge-Based Systems, (2018).
+%%%*********************************************************************************************%%%
+%% This paper and this code should be referenced whenever they are used to 
+%% generate results for the user's own research. 
+%%%*********************************************************************************************%%%
+%% This matlab code was written by Haibo Yu
+%% Please refer with all questions, comments, bug reports, etc. to tyustyuhaibo@126.com 
+% % 
+clear,clc
+rng('default');
+rng('shuffle');
+warning('off');
+d=30;%dimension of problem
+
+if d <= 30
+    maxfe=11*d;
+else
+    maxfe=1000;
+end
+
+fname='FITNESS';                                        % Basic Function
+% fname='benchmark_func';                                 % 2005 CEC Benchmark Function
+
+sn1=2;
+gfs=zeros(1,fix(maxfe/sn1));
+CE=zeros(maxfe,2);
+
+time_begin=tic;
+runnum=30;
+
+for run=1:runnum
+    run
+    %---------------Initialization-----------------
+    %parameter setting
+    %population size
+    if d <= 30
+        m=5*d;        
+    else
+        M = 100;      m = M + fix(d/10); 
+    end
+    c3 = 0;
+    PL = ones(m,1);
+    
+    %initialization
+    p = zeros(m, d); 
+    v = zeros(m, d);    
+    variable_domain;
+    lu = [Xmin* ones(1, d); Xmax* ones(1, d)];
+    FES = 0;    gen = 0;       
+%     rand('seed', sum(100 * clock));
+
+    XRRmin = repmat(lu(1, :), m, 1);
+    XRRmax = repmat(lu(2, :), m, 1);
+    p = XRRmin + (XRRmax - XRRmin) .* lhsdesign(m, d);     
+
+    fitness=zeros(1,m);
+    for ii=1:m
+        fitness(ii) = feval(fname,p(ii,:));
+        FES=FES+1;
+        if FES <= maxfe 
+            CE(FES,:)=[FES,fitness(ii)];
+            if mod (FES,sn1)==0
+                cs1=FES/sn1;
+                gfs(1,cs1)=min(CE(1:FES,2));
+            end
+        end
+    end                                                    
+    hx=p;   hf=fitness;                                     
+    
+    [bestever,id] = min(fitness);
+    gbpos=p(id,:);
+
+    num_gen=30;% 1(SSLPSO), 10, 20, 30（Standard.GORS-SSLPSO）, 40, 50, 60, 80
+    
+    %main loop
+    while(FES < maxfe)
+%         fprintf('Iteration: %d Fitness evaluation: %d Best fitness: %e\n', gen, FES, bestever);       
+        
+        if mod(gen, num_gen) == 0 % only meeting this condition, the top-ranking m data are used
+            
+            fprintf('Iteration: %d Fitness evaluation: %d Best fitness: %e\n', gen, FES, bestever);
+                             
+            [~,idx]=sort(fitness); 
+            p_app=p(idx,:); f_app=fitness(idx);
+            [~,~,ip]=intersect(hx,p_app,'rows');
+            p_app(ip,:)=[];
+            f_app(ip)=[];
+            if ~isempty(p_app)==1
+                sbest_pos=p_app(1,:);
+                sbesty=feval(fname,sbest_pos);
+                FES=FES+1;
+                CE(FES,:)=[FES,sbesty];
+                if mod (FES,sn1)==0
+                    cs1=FES/sn1;
+                    gfs(1,cs1)=min(CE(1:FES,2));
+                end
+                hx=[hx;sbest_pos];   hf=[hf,sbesty];
+                [bestever,ib] = min([sbesty, bestever]);      
+                if ib==1
+                    gbpos=sbest_pos; 
+                end
+            end
+
+            % select the best m sample points to form the population
+            [~,idx]=sort(hf);   idx=idx(1:m);
+            p=hx(idx,:);        fitness=hf(idx);  
+
+            p;    fitness;        
+        end
+        
+       %% ********************* Phase 2 ************************ behavioral learning               
+        %population sorting        
+        [fitness,rank] = sort(fitness, 'descend');
+        p = p(rank,:);
+        v = v(rank,:); 
+        %center position
+        center = ones(m,1)*mean(p);
+        %random matrix
+%         rand('seed', sum(100 * clock));
+        randco1 = rand(m, d);
+%         rand('seed', sum(100 * clock));
+        randco2 = rand(m, d);
+%         rand('seed', sum(100 * clock));
+        randco3 = rand(m, d);
+        winidxmask = repmat([1:m]', [1 d]);
+        winidx = winidxmask + ceil(rand(m, d).*(m - winidxmask));
+        %     winidx = m - floor(0.5*rand(m, d).*(m - winidxmask));    
+        pwin = p;
+        for j = 1:d
+            pwin(:,j) = p(winidx(:,j),j);
+        end
+        %learning
+%         rand('seed', sum(100 * clock));
+        lpmask = repmat(rand(m,1) < PL, [1 d]);
+        lpmask(m,:) = 0;
+        v1 =  1*(randco1.*v + randco2.*(pwin - p) + c3*randco3.*(center - p));
+        p1 =  p + v1;   
+        v = lpmask.*v1 + (~lpmask).*v;
+        p = lpmask.*p1 + (~lpmask).*p;
+        %boundary
+        for i = 1:m
+            p(i,:) = max(p(i,:), lu(1,:));
+            p(i,:) = min(p(i,:), lu(2,:));
+        end
+        gen = gen + 1;   
+        
+       %% ********************* RBF modeling ************************ 
+        % Local model for 50D / 100D
+%         NS=2*(d+1);                                    
+%         phdis=real(sqrt(p.^2*ones(size(hx'))+ones(size(p))*(hx').^2-2*p*(hx')));        
+%         [~,sidx]=sort(phdis,2);                        
+%         nidx=sidx; nidx(:,NS+1:end)=[];                
+%         nid=unique(nidx);
+%         trainx=hx(nid,:);   
+%         trainf=hf(nid);    
+        
+        % Global model for 10D / 20D / 30D
+        trainx=hx;  trainf=hf;
+       
+        % radial basis function interpolation----(RBF-interpolation)
+        flag='cubic';
+        [lambda, gamma]=RBF(trainx,trainf',flag);
+        FUN=@(x) RBF_eval(x,trainx,lambda,gamma,flag);
+%%        
+        fitness=FUN(p);     fitness=fitness';
+    end
+    gsamp1(run,:)=gfs;
+end
+
+best_samp=min(gsamp1(:,end));
+worst_samp=max(gsamp1(:,end));
+samp_mean=mean(gsamp1(:,end));
+samp_median=median(gsamp1(:,end));
+std_samp=std(gsamp1(:,end));
+out1=[best_samp,worst_samp,samp_median,samp_mean,std_samp];
+gsamp1_ave=mean(gsamp1,1);
+gsamp1_log=log(gsamp1_ave);
+
+for j=1:maxfe
+    if mod(j,sn1)==0
+        j1=j/sn1; gener_samp1(j1)=j;
+    end
+end
+
+figure(1);
+plot(gener_samp1,gsamp1_log,'.-k','Markersize',16)
+legend('GORS-SSLPSO');
+% xlim([100,maxfe]);
+xlabel('Function Evaluation Calls ');
+ylabel('Mean Fitenss Value (Natural log)');
+% % % title('2005 CEC Benchmark Function (F10)')
+% % % title('Ackley Function')
+% % % title('Griewank Function')
+% % % title('Rastrigin Function')
+% % % title('Rosenbrock Function')
+% % % title('Ellipsoid Function')
+time_cost=toc(time_begin);
