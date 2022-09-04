@@ -25,3 +25,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |MS-MOEA|An Adaptive Model Switch-based Surrogate-Assisted Evolutionary Algorithm for Noisy Expensive Multi-Objective Optimization|[HandingWangXDGroup/MS-MOEA](https://github.com/HandingWangXDGroup/MS-MOEA)|
 |PBF|A Framework for Expensive Many-Objective Optimization with Pareto-based Bi-indicator Infill Sampling Criterion|[HandingWangXDGroup/PBF](https://github.com/HandingWangXDGroup/PBF)|
 |MDR-SARA|Multi-Stage Dimension Reduction for Expensive Sparse Multi-Objective Optimization Problems|[HandingWangXDGroup/MDR-SAEA](https://github.com/HandingWangXDGroup/MDR-SAEA)|
+|RF-CNS|A random forest assisted evolutionary algorithm using competitive neighborhood search for expensive constrained combinatorial optimization|[HandingWangXDGroup/RF-CNS](https://github.com/HandingWangXDGroup/RF-CNS)|
