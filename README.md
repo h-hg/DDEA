@@ -22,3 +22,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |KTA2||[HandingWangXDGroup/KTA2](https://github.com/HandingWangXDGroup/KTA2)|
 |EAHVFA|A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming|[HandingWangXDGroup/EAHVFA](https://github.com/HandingWangXDGroup/EAHVFA)|
 |IBEA-MS|Performance Indicator based Adaptive Model Selection for Offline Data-Driven Multi-Objective Evolutionary Optimization|[HandingWangXDGroup/IBEA-MS](https://github.com/HandingWangXDGroup/IBEA-MS)|
+|MS-MOEA|An Adaptive Model Switch-based Surrogate-Assisted Evolutionary Algorithm for Noisy Expensive Multi-Objective Optimization|[HandingWangXDGroup/MS-MOEA](https://github.com/HandingWangXDGroup/MS-MOEA)|
