@@ -26,3 +26,4 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |PBF|A Framework for Expensive Many-Objective Optimization with Pareto-based Bi-indicator Infill Sampling Criterion|[HandingWangXDGroup/PBF](https://github.com/HandingWangXDGroup/PBF)|
 |MDR-SARA|Multi-Stage Dimension Reduction for Expensive Sparse Multi-Objective Optimization Problems|[HandingWangXDGroup/MDR-SAEA](https://github.com/HandingWangXDGroup/MDR-SAEA)|
 |RF-CNS|A random forest assisted evolutionary algorithm using competitive neighborhood search for expensive constrained combinatorial optimization|[HandingWangXDGroup/RF-CNS](https://github.com/HandingWangXDGroup/RF-CNS)|
+|TL-SSLPSO|Implementation of Truncation-learning-driven surrogate assisted social learning particle swarm optimization for computationally expensive problem|[yuhaibo2017/TL-SSLPSO](https://github.com/yuhaibo2017/TL-SSLPSO)|
