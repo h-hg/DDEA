@@ -2,6 +2,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 
 |Model|Paper|Original Repository|
 |:-:|:-:|:-:|
+|BiS-SAHA|A bi-stage surrogate assisted hybrid algorithm for expensive optimization problems|[IIS-tyust/BiS-SAHA](https://github.com/IIS-tyust/BiS-SAHA)|
 |CALSAPSO|Committee-based Active Learning for Surrogate-Assisted Particle Swarm Optimization of Expensive Problems|[HandingWang/CALSAPSO](https://github.com/HandingWang/CALSAPSO)|
 |CA-LLSO|A Classifier-Assisted Level-Based Learning Swarm Optimizer for Expensive Optimization|[CarrieWei/CA-LLSO_Code](https://github.com/CarrieWei/CA-LLSO_Code)|
 |CSEA|A Classification-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Many-Objective Optimization|[Cheng He/CSEA](https://www.researchgate.net/publication/324721301_The_source_code_of_CSEA)|
