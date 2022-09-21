@@ -29,6 +29,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |TLSAPSO|A two-layer surrogate-assisted particle swarm optimization algorithm|[IIS-tyust/TLSAPSO](https://github.com/IIS-tyust/TLSAPSO)|
 |TL-SSLPSO|Implementation of Truncation-learning-driven surrogate assisted social learning particle swarm optimization for computationally expensive problem|[yuhaibo2017/TL-SSLPSO](https://github.com/yuhaibo2017/TL-SSLPSO)|
 |TSA-BFEA|Transfer stacking from low-to high-fidelity: A surrogate-assisted bi-fidelity evolutionary algorithm|[HandingWang/TSA-BFEA](https://github.com/HandingWang/TSA-BFEA)|
+|TS-DDEO|Two-Stage Data-Driven Evolutionary Optimization for High-Dimensional Expensive Problems|[zhenhuixiang/TS-DDEO code.zip](https://zhenhuixiang.github.io/code/TS-DDEO%20code.zip)|
 |TT-DDEA|Offine Data-Driven Evolutionary Optimization Based on Tri-Training, Swarm and Evolutionary Computation|[Mikasa210/TT-DDEA](https://github.com/Mikasa210/TT-DDEA)|
 |KTA2|A Kriging-Assisted Two-Archive Evolutionary Algorithm for Expensive Many-Objective Optimization|[HandingWangXDGroup/KTA2](https://github.com/HandingWangXDGroup/KTA2)|
 |EAHVFA|A Surrogate-Assisted Evolutionary Algorithm with Hypervolume Triggered Fidelity Adjustment for Noisy Multiobjective Integer Programming|[HandingWangXDGroup/EAHVFA](https://github.com/HandingWangXDGroup/EAHVFA)|
