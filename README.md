@@ -28,6 +28,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |SDH-Jaya|A surrogate-assisted Jaya algorithm based on optimal directional guidance and historical learning mechanism|[zzzhhh-320/SDHJAYA](https://github.com/zzzhhh-320/SDHJAYA)|
 |SHPSO|Surrogate-assisted hierarchical particle swarm optimization|[yuhaibo2017/SHPSO_code](https://github.com/yuhaibo2017/SHPSO_code)|
 |SRK-DDEA|Ranking for Offline Data-Driven Evolutionary Optimization Using Radial Basis Function Networks with Multiple Kernels|[Mikasa210/SRK-DDEA](https://github.com/Mikasa210/SRK-DDEA)|
+|SSL-assisted-PSO|Semi-supervised learning assisted particle swarm optimization of computationally expensive problems|[IIS-tyust/SSL-assisted-PSO](https://github.com/IIS-tyust/SSL-assisted-PSO)|
 |TLSAPSO|A two-layer surrogate-assisted particle swarm optimization algorithm|[IIS-tyust/TLSAPSO](https://github.com/IIS-tyust/TLSAPSO)|
 |TL-SSLPSO|Implementation of Truncation-learning-driven surrogate assisted social learning particle swarm optimization for computationally expensive problem|[yuhaibo2017/TL-SSLPSO](https://github.com/yuhaibo2017/TL-SSLPSO)|
 |TSA-BFEA|Transfer stacking from low-to high-fidelity: A surrogate-assisted bi-fidelity evolutionary algorithm|[HandingWang/TSA-BFEA](https://github.com/HandingWang/TSA-BFEA)|
