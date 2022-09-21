@@ -6,6 +6,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |CA-LLSO|A Classifier-Assisted Level-Based Learning Swarm Optimizer for Expensive Optimization|[CarrieWei/CA-LLSO_Code](https://github.com/CarrieWei/CA-LLSO_Code)|
 |CSEA|A Classification-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Many-Objective Optimization|[Cheng He/CSEA](https://www.researchgate.net/publication/324721301_The_source_code_of_CSEA)|
 |DDEA-SE|Offline data-driven evolutionary optimization using selective surrogate ensembles|[HandingWang/DDEA-SE](https://github.com/HandingWang/DDEA-SE)|
+|ESA|Evolutionary Sampling Agent for Expensive Problems|[zhenhuixiang/EAS code.zip](https://zhenhuixiang.github.io/code/ESA%20code.zip)|
 |GORS-SSLPSO|A generation-based optimal restart strategy for surrogate-assisted social learning particle swarm optimization|[yuhaibo2017/GORS-SSLPSO_code](https://github.com/yuhaibo2017/GORS-SSLPSO_code)|
 |HK-RVEA|Surrogate-assisted evolutionary biobjective optimization for objectives with non-uniform latencies|[tichugh/HK-RVEA](https://github.com/tichugh/HK-RVEA)|
 |IBEA-MS|Performance Indicator based Adaptive Model Selection for Offline Data-Driven Multi-Objective Evolutionary Optimization|[HandingWangXDGroup/IBEA-MS](https://github.com/HandingWangXDGroup/IBEA-MS)|
@@ -18,7 +19,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |RF-CMOCO|A Random Forest-Assisted Evolutionary Algorithm for Data-Driven Constrained Multiobjective Combinatorial Optimization of Trauma Systems|[HandingWang/RF-CMOCO](https://github.com/HandingWang/RF-CMOCO)|
 |SAEAPRG|A Surrogate-Assisted Evolutionary Feature Selection Algorithm for High-Dimensional Classification|[HandingWangXDGroup/SAEAPRG](https://github.com/HandingWangXDGroup/SAEAPRG)|
 |RF-CNS|A random forest assisted evolutionary algorithm using competitive neighborhood search for expensive constrained combinatorial optimization|[HandingWangXDGroup/RF-CNS](https://github.com/HandingWangXDGroup/RF-CNS)|
-|SA-COSO|Surrogate-assisted cooperative swarm optimization of high-dimensional expensive problems[J]. IEEE Transactions on Evolutionary Computation|[IIS-tyust/SA-COSO](https://github.com/IIS-tyust/SA-COSO)|
+|SA-COSO|Surrogate-assisted cooperative swarm optimization of high-dimensional expensive problems.|[IIS-tyust/SA-COSO](https://github.com/IIS-tyust/SA-COSO)|
 |SAEA-RFS|A Surrogate-Assisted Evolutionary Algorithm with Random Feature Selection for Large-Scale Expensive Problems|[IIS-tyust/SAEA-RFS](https://github.com/IIS-tyust/SAEA-RFS)|
 |SAMSO|A Surrogate-Assisted Multi-Swarm Optimization Algorithm for High-Dimensional Computationally Expensive Problems|[fanli525/SAMSO](https://github.com/fanli525/SAMSO)|
 |SDH-Jaya|A surrogate-assisted Jaya algorithm based on optimal directional guidance and historical learning mechanism|[zzzhhh-320/SDHJAYA](https://github.com/zzzhhh-320/SDHJAYA)|

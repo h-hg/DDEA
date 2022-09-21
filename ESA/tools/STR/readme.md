@@ -1,0 +1,2 @@
+# The STR code was provided by Dr. Cai.
+X. Cai, L. Gao, X. Li, "Efficient generalized surrogate-assisted evolutionary algorithm for high-dimensional expensive problems", IEEE Transactions on Evolutionary Computation, 2019, 24(2): 365-379.
