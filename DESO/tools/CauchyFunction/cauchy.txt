@@ -1,0 +1,31 @@
+Cauchy cdf, pdf, inverse cdf, parameter fit, and random generator. 
+
+Implementation package of the Cauchy distribution. 
+
+cauchycdf: Cauchy cumulative distribution function (cdf).
+cauchyfit: Parameter estimation for Cauchy data. 
+cauchyinv: Inverse of the Cauchy cumulative distribution function (cdf). 
+cauchypdf: Cauchy probability density function (pdf). 
+cauchyrnd: Generate random numbers from the Cauchy distribution.
+
+If you find any errors, please let me know (peder at axensten dot se).
+
+NOTE: I'd like to know about the math for calculating the parameters confidence interval in cauchyfit. Any help appreciated. 
+
+Should work on almost any version of Matlab. 
+
+Copyright (C) Peder Axensten <peder at axensten dot se>
+
+HISTORY
+Version 1.0, 2006-07-10. 
+Version 1.1, 2006-07-26.
+- Added cauchyfit to the cauchy package. 
+Version 1.2, 2006-08-06:
+- cauchyinv(0, ...) returned a large negative number but should be -Inf. 
+- Can now estimate one parameter when the other is given. 
+- Size comparison in argument check didn't work. 
+- Various other improvements to check list. 
+- The arrangement of arguments now follows the ways of Statistics Toolbox. 
+- Put the actual mle in a separate file. 
+
+KEYWORDS: Cauchy distribution, statistics, random numbers, parameter estimation.

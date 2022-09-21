@@ -6,6 +6,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |CA-LLSO|A Classifier-Assisted Level-Based Learning Swarm Optimizer for Expensive Optimization|[CarrieWei/CA-LLSO_Code](https://github.com/CarrieWei/CA-LLSO_Code)|
 |CSEA|A Classification-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Many-Objective Optimization|[Cheng He/CSEA](https://www.researchgate.net/publication/324721301_The_source_code_of_CSEA)|
 |DDEA-SE|Offline data-driven evolutionary optimization using selective surrogate ensembles|[HandingWang/DDEA-SE](https://github.com/HandingWang/DDEA-SE)|
+|DESO|Data-driven evolutionary sampling optimization for expensive problems|[zhenhuixiang/DESO code.zip](https://zhenhuixiang.github.io/code/DESO%20code.zip)|
 |ESA|Evolutionary Sampling Agent for Expensive Problems|[zhenhuixiang/EAS code.zip](https://zhenhuixiang.github.io/code/ESA%20code.zip)|
 |GORS-SSLPSO|A generation-based optimal restart strategy for surrogate-assisted social learning particle swarm optimization|[yuhaibo2017/GORS-SSLPSO_code](https://github.com/yuhaibo2017/GORS-SSLPSO_code)|
 |HK-RVEA|Surrogate-assisted evolutionary biobjective optimization for objectives with non-uniform latencies|[tichugh/HK-RVEA](https://github.com/tichugh/HK-RVEA)|
