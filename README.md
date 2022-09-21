@@ -18,6 +18,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |MGPSLPSO|Multiobjective Infill Criterion Driven Gaussian Process-Assisted Particle Swarm Optimization of High-Dimensional Expensive Problems|[Jetina/MGPSLPSO](https://github.com/Jetina/MGPSLPSO)|
 |MS-DDEO|Offline data-driven evolutionary optimization based on model selection|[zhenhuixiang/MS-DDEO code.zip](https://zhenhuixiang.github.io/code/MS-DDEO%20code.zip)|
 |MS-MOEA|An Adaptive Model Switch-based Surrogate-Assisted Evolutionary Algorithm for Noisy Expensive Multi-Objective Optimization|[HandingWangXDGroup/MS-MOEA](https://github.com/HandingWangXDGroup/MS-MOEA)|
+|MS-MTO|Multi-surrogate multi-tasking optimization of expensive problems|[IIS-tyust/MS-MTO](https://github.com/IIS-tyust/MS-MTO)|
 |PBF|A Framework for Expensive Many-Objective Optimization with Pareto-based Bi-indicator Infill Sampling Criterion|[HandingWangXDGroup/PBF](https://github.com/HandingWangXDGroup/PBF)|
 |RF-CMOCO|A Random Forest-Assisted Evolutionary Algorithm for Data-Driven Constrained Multiobjective Combinatorial Optimization of Trauma Systems|[HandingWang/RF-CMOCO](https://github.com/HandingWang/RF-CMOCO)|
 |SAEAPRG|A Surrogate-Assisted Evolutionary Feature Selection Algorithm for High-Dimensional Classification|[HandingWangXDGroup/SAEAPRG](https://github.com/HandingWangXDGroup/SAEAPRG)|
