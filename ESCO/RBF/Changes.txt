@@ -1,0 +1,7 @@
+ver. 1.1
+August 12, 2009
+* Some additional vectorization
+
+ver. 1.0
+July 11, 2009
+* First release

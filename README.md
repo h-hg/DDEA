@@ -9,6 +9,7 @@ This is a repository that collects various data-driven evolutionary algorithms (
 |DDEA-SE|Offline data-driven evolutionary optimization using selective surrogate ensembles|[HandingWang/DDEA-SE](https://github.com/HandingWang/DDEA-SE)|
 |DESO|Data-driven evolutionary sampling optimization for expensive problems|[zhenhuixiang/DESO code.zip](https://zhenhuixiang.github.io/code/DESO%20code.zip)|
 |ESA|Evolutionary Sampling Agent for Expensive Problems|[zhenhuixiang/EAS code.zip](https://zhenhuixiang.github.io/code/ESA%20code.zip)|
+|ESCO|An Ensemble Surrogate-Based Coevolutionary Algorithm for Solving Large-Scale Expensive Optimization Problems|[Xunfeng-Wu/ESCO](https://github.com/Xunfeng-Wu/ESCO)|
 |GORS-SSLPSO|A generation-based optimal restart strategy for surrogate-assisted social learning particle swarm optimization|[yuhaibo2017/GORS-SSLPSO_code](https://github.com/yuhaibo2017/GORS-SSLPSO_code)|
 |HK-RVEA|Surrogate-assisted evolutionary biobjective optimization for objectives with non-uniform latencies|[tichugh/HK-RVEA](https://github.com/tichugh/HK-RVEA)|
 |IBEA-MS|Performance Indicator based Adaptive Model Selection for Offline Data-Driven Multi-Objective Evolutionary Optimization|[HandingWangXDGroup/IBEA-MS](https://github.com/HandingWangXDGroup/IBEA-MS)|
