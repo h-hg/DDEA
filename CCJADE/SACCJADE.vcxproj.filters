@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="File di origine\GP">
+      <UniqueIdentifier>{cfd124e9-73c5-4053-9e01-da5c3bcbae49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\RBFN">
+      <UniqueIdentifier>{a111af1c-4c96-475b-9f94-d2823ae4fd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\QPA">
+      <UniqueIdentifier>{36ed898f-e73e-4f60-99c4-130531ccb93b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="JADE.h">
+      <Filter>File di origine</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianProc.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="CCDE.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="JADE.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Decomposer.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="SOCO_SI\funsoft.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="sobol.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\gp.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\gp_utils.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\rprop.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\sampleset.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_factory.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_linear_ard.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_linear_one.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_matern3_iso.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_matern5_iso.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_noise.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_periodic.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_periodic_matern3_iso.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_prod.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_rq_iso.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_se_iso.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_sum.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cov_se_ard.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\cg.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="libgp\src\input_dim_filter.cc">
+      <Filter>File di origine\GP</Filter>
+    </ClCompile>
+    <ClCompile Include="qpa\QuadraticRegression.cpp">
+      <Filter>File di origine\QPA</Filter>
+    </ClCompile>
+    <ClCompile Include="rbfn\KmeansPP.cpp">
+      <Filter>File di origine\RBFN</Filter>
+    </ClCompile>
+    <ClCompile Include="rbfn\RBFNetwork.cpp">
+      <Filter>File di origine\RBFN</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\all\source.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
